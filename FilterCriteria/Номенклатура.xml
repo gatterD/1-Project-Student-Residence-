@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<FilterCriterion uuid="7919f1f7-9e73-46d6-9bc5-c37a7ad282ce">
+		<InternalInfo>
+			<xr:GeneratedType name="FilterCriterionManager.Номенклатура" category="Manager">
+				<xr:TypeId>3aaed25c-c6ec-435a-a830-bfaf563b4466</xr:TypeId>
+				<xr:ValueId>c7b14ad4-123c-49ad-8de6-005b14f0d780</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="FilterCriterionList.Номенклатура" category="List">
+				<xr:TypeId>578c1437-d4ea-444c-bbac-1bb03bdf3f8e</xr:TypeId>
+				<xr:ValueId>4da5b8bc-17d5-4945-97a8-b9155fb6fb58</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>Номенклатура</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы по номенклатуре</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+			</Type>
+			<UseStandardCommands>true</UseStandardCommands>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ОказаниеУслуги.TabularSection.ТЧ_ПереченьНоменклатура.Attribute.Материал</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ОказаниеУслуги.TabularSection.ТЧ_Услуги.Attribute.Номенклатура</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПокупкаИнвентаря.TabularSection.ТЧ_ПереченьНоменклатура.Attribute.Материал</xr:Item>
+			</Content>
+			<DefaultForm>FilterCriterion.Номенклатура.Form.ФормаСписка</DefaultForm>
+			<AuxiliaryForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаСписка</Form>
+		</ChildObjects>
+	</FilterCriterion>
+</MetaDataObject>

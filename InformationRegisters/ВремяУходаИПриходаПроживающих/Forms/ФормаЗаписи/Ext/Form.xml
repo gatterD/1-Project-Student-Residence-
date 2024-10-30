@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Студент" id="4">
+			<DataPath>Запись.Студент</DataPath>
+			<ContextMenu name="СтудентКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="СтудентРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Общежитие" id="7">
+			<DataPath>Запись.Общежитие</DataPath>
+			<ContextMenu name="ОбщежитиеКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ОбщежитиеРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="День" id="35">
+			<DataPath>1/0:ad3da254-f32f-4d13-b175-2177c1fd4425</DataPath>
+			<ContextMenu name="ДеньКонтекстноеМеню" id="36"/>
+			<ExtendedTooltip name="ДеньРасширеннаяПодсказка" id="37"/>
+		</InputField>
+		<InputField name="Период" id="1">
+			<DataPath>Запись.Period</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>День</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ПериодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="ВремяУходаИзОбщежития" id="32">
+			<DataPath>Запись.ВремяУходаИзОбщежития</DataPath>
+			<ContextMenu name="ВремяУходаИзОбщежитияКонтекстноеМеню" id="33"/>
+			<ExtendedTooltip name="ВремяУходаИзОбщежитияРасширеннаяПодсказка" id="34"/>
+		</InputField>
+		<InputField name="ВремяВозвращенияВОбщежитие" id="29">
+			<DataPath>Запись.ВремяВозвращенияВОбщежитие</DataPath>
+			<ContextMenu name="ВремяВозвращенияВОбщежитиеКонтекстноеМеню" id="30"/>
+			<ExtendedTooltip name="ВремяВозвращенияВОбщежитиеРасширеннаяПодсказка" id="31"/>
+		</InputField>
+		<UsualGroup name="ГруппаГости" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Гости(Если проживающий пришел с гостями)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа гости</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаГостиРасширеннаяПодсказка" id="23"/>
+			<ChildItems>
+				<CheckBoxField name="Гости" id="26">
+					<DataPath>Гости</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гости</v8:content>
+						</v8:item>
+					</Title>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ГостиКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ГостиРасширеннаяПодсказка" id="28"/>
+					<Events>
+						<Event name="OnChange">ГостиФлагПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<InputField name="СколькоГостей" id="13">
+					<DataPath>Запись.СколькоГостей</DataPath>
+					<Visible>false</Visible>
+					<ContextMenu name="СколькоГостейКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="СколькоГостейРасширеннаяПодсказка" id="15"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ВремяУходаИПриходаПроживающих</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="Гости" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Гости</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<DocumentJournal uuid="166cce8d-be52-4264-ab31-bfdf601af22f">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentJournalSelection.ДокументыВлияющиеНаБюджет" category="Selection">
+				<xr:TypeId>9be45422-db85-485d-929a-633df83aad24</xr:TypeId>
+				<xr:ValueId>4c0f41c9-7c01-4b19-9c74-d18c75a2ad30</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalList.ДокументыВлияющиеНаБюджет" category="List">
+				<xr:TypeId>127f4037-3dc0-41f1-ae1e-3590d194ed3d</xr:TypeId>
+				<xr:ValueId>1ccc7e7a-1643-4377-b3fa-3943d3c61e10</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalManager.ДокументыВлияющиеНаБюджет" category="Manager">
+				<xr:TypeId>d62ee994-f012-4590-91ce-092e2154fef4</xr:TypeId>
+				<xr:ValueId>b9c071b7-c5ac-444b-aed2-403bbc312701</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ДокументыВлияющиеНаБюджет</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы влияющие на бюджет</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<DefaultForm>DocumentJournal.ДокументыВлияющиеНаБюджет.Form.ФормаСписка</DefaultForm>
+			<AuxiliaryForm/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<RegisteredDocuments>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ОплатаПроживания</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ОказаниеУслуги</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВыплатаЗарплат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Счета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПокупкаИнвентаря</xr:Item>
+			</RegisteredDocuments>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Column uuid="bebfc85b-4778-47ef-9732-084b8280172f">
+				<Properties>
+					<Name>СотрудникЗаполняющийДокумент</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сотрудник заполняющий документ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ОплатаПроживания.Attribute.СотрудникЗаполняющийДокумент</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ВыплатаЗарплат.Attribute.СотрудникЗаполняющийДокумент</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ОказаниеУслуги.Attribute.Мастер</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.Счета.Attribute.СотрудникЗаполняющийДокумент</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПокупкаИнвентаря.Attribute.Клиент</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Form>ФормаСписка</Form>
+		</ChildObjects>
+	</DocumentJournal>
+</MetaDataObject>

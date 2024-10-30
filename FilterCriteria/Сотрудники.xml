@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<FilterCriterion uuid="a343a752-061b-465c-91a7-402de034d208">
+		<InternalInfo>
+			<xr:GeneratedType name="FilterCriterionManager.Сотрудники" category="Manager">
+				<xr:TypeId>0cedbfe1-a17c-4462-a464-da6d4919c024</xr:TypeId>
+				<xr:ValueId>d770659b-fc93-49ef-a764-4bccdeb72b62</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="FilterCriterionList.Сотрудники" category="List">
+				<xr:TypeId>989a669a-868b-4bb7-9d85-a29dd7fb39df</xr:TypeId>
+				<xr:ValueId>73cbb9d6-a2bd-4969-aa40-bbd6886bd4e2</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>Сотрудники</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы с сотрудником</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+			</Type>
+			<UseStandardCommands>true</UseStandardCommands>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВыплатаЗарплат.TabularSection.ТЧ_Выплаты.Attribute.Сотрудник</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПриходныйКассовыйОрдер.Attribute.КонтактноеЛицо</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РасходныйКассовыйОрдер.Attribute.КонтактноеЛицо</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ОплатаПроживания.Attribute.СотрудникЗаполняющийДокумент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ОказаниеУслуги.Attribute.Мастер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВыплатаЗарплат.Attribute.СотрудникЗаполняющийДокумент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Счета.Attribute.СотрудникЗаполняющийДокумент</xr:Item>
+			</Content>
+			<DefaultForm>FilterCriterion.Сотрудники.Form.ФормаСписка</DefaultForm>
+			<AuxiliaryForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаСписка</Form>
+		</ChildObjects>
+	</FilterCriterion>
+</MetaDataObject>

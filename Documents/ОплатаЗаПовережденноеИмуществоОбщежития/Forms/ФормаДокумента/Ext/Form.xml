@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="СотрудникЗаполняющийДокумент" id="7">
+			<DataPath>Объект.СотрудникЗаполняющийДокумент</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сотрудник Заполняющий Документ</v8:content>
+				</v8:item>
+			</Title>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СотрудникЗаполняющийДокументКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="СотрудникЗаполняющийДокументРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Платильщик" id="10">
+			<DataPath>Объект.Платильщик</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПлатильщикКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ПлатильщикРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<CheckBoxField name="ОплатаСтудентом" id="56">
+			<DataPath>Объект.ОплатаСтудентом</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ОплатаСтудентомКонтекстноеМеню" id="57"/>
+			<ExtendedTooltip name="ОплатаСтудентомРасширеннаяПодсказка" id="58"/>
+		</CheckBoxField>
+		<InputField name="Общежитие" id="13">
+			<DataPath>Объект.Общежитие</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ОбщежитиеКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ОбщежитиеРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="ТипОплаты" id="16">
+			<DataPath>Объект.ТипОплаты</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ТипОплатыКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ТипОплатыРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="СуммаДокумента" id="19">
+			<DataPath>Объект.СуммаДокумента</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СуммаДокументаКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="СуммаДокументаРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<Table name="ТЧ_ИспорченноеИмущество" id="22">
+			<Representation>List</Representation>
+			<Footer>true</Footer>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ТЧ_ИспорченноеИмущество</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТЧ_ИспорченноеИмуществоКонтекстноеМеню" id="23"/>
+			<AutoCommandBar name="ТЧ_ИспорченноеИмуществоКоманднаяПанель" id="24"/>
+			<ExtendedTooltip name="ТЧ_ИспорченноеИмуществоРасширеннаяПодсказка" id="25"/>
+			<SearchStringAddition name="ТЧ_ИспорченноеИмуществоСтрокаПоиска" id="26">
+				<AdditionSource>
+					<Item>ТЧ_ИспорченноеИмущество</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТЧ_ИспорченноеИмуществоСтрокаПоискаКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="ТЧ_ИспорченноеИмуществоСтрокаПоискаРасширеннаяПодсказка" id="28"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТЧ_ИспорченноеИмуществоСостояниеПросмотра" id="29">
+				<AdditionSource>
+					<Item>ТЧ_ИспорченноеИмущество</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТЧ_ИспорченноеИмуществоСостояниеПросмотраКонтекстноеМеню" id="30"/>
+				<ExtendedTooltip name="ТЧ_ИспорченноеИмуществоСостояниеПросмотраРасширеннаяПодсказка" id="31"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТЧ_ИспорченноеИмуществоУправлениеПоиском" id="32">
+				<AdditionSource>
+					<Item>ТЧ_ИспорченноеИмущество</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТЧ_ИспорченноеИмуществоУправлениеПоискомКонтекстноеМеню" id="33"/>
+				<ExtendedTooltip name="ТЧ_ИспорченноеИмуществоУправлениеПоискомРасширеннаяПодсказка" id="34"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ТЧ_ИспорченноеИмуществоНомерСтроки" id="35">
+					<DataPath>Объект.ТЧ_ИспорченноеИмущество.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЧ_ИспорченноеИмуществоНомерСтрокиКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ТЧ_ИспорченноеИмуществоНомерСтрокиРасширеннаяПодсказка" id="37"/>
+				</LabelField>
+				<InputField name="ТЧ_ИспорченноеИмуществоМатериал" id="38">
+					<DataPath>Объект.ТЧ_ИспорченноеИмущество.Материал</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЧ_ИспорченноеИмуществоМатериалКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ТЧ_ИспорченноеИмуществоМатериалРасширеннаяПодсказка" id="40"/>
+					<Events>
+						<Event name="OnChange">ТЧ_ИспорченноеИмуществоМатериалПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ТЧ_ИспорченноеИмуществоНаборСвойств" id="50">
+					<DataPath>Объект.ТЧ_ИспорченноеИмущество.НаборСвойств</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ChoiceParameterLinks>
+						<xr:Link>
+							<xr:Name>Отбор.Владелец</xr:Name>
+							<xr:DataPath xsi:type="xs:string">Items.ТЧ_ИспорченноеИмущество.CurrentData.Материал</xr:DataPath>
+							<xr:ValueChange>Clear</xr:ValueChange>
+						</xr:Link>
+					</ChoiceParameterLinks>
+					<ContextMenu name="ТЧ_ИспорченноеИмуществоНаборСвойствКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ТЧ_ИспорченноеИмуществоНаборСвойствРасширеннаяПодсказка" id="52"/>
+				</InputField>
+				<InputField name="ТЧ_ИспорченноеИмуществоЦена" id="41">
+					<DataPath>Объект.ТЧ_ИспорченноеИмущество.Цена</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЧ_ИспорченноеИмуществоЦенаКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ТЧ_ИспорченноеИмуществоЦенаРасширеннаяПодсказка" id="43"/>
+					<Events>
+						<Event name="OnChange">ТЧ_ИспорченноеИмуществоЦенаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ТЧ_ИспорченноеИмуществоКоличество" id="44">
+					<DataPath>Объект.ТЧ_ИспорченноеИмущество.Количество</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЧ_ИспорченноеИмуществоКоличествоКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ТЧ_ИспорченноеИмуществоКоличествоРасширеннаяПодсказка" id="46"/>
+					<Events>
+						<Event name="OnChange">ТЧ_ИспорченноеИмуществоКоличествоПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ТЧ_ИспорченноеИмуществоСумма" id="47">
+					<DataPath>Объект.ТЧ_ИспорченноеИмущество.Сумма</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<FooterDataPath>Объект.ТЧ_ИспорченноеИмущество.TotalСумма</FooterDataPath>
+					<ContextMenu name="ТЧ_ИспорченноеИмуществоСуммаКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ТЧ_ИспорченноеИмуществоСуммаРасширеннаяПодсказка" id="49"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ОплатаЗаПовережденноеИмуществоОбщежития</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Мастер" id="7">
+			<DataPath>Объект.Мастер</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="МастерКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="МастерРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Клиент" id="10">
+			<DataPath>Объект.Клиент</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КлиентКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="КлиентРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="ВидОплаты" id="13">
+			<DataPath>Объект.ВидОплаты</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ВидОплатыКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ВидОплатыРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="СуммаДокумента" id="16">
+			<DataPath>Объект.СуммаДокумента</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СуммаДокументаКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="СуммаДокументаРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<Pages name="Страницы" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="20"/>
+			<ChildItems>
+				<Page name="ГруппаТЧ_ПереченьНоменклатура" id="21">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Перечень номенклатуры</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаТЧ_ПереченьНоменклатураРасширеннаяПодсказка" id="22"/>
+					<ChildItems>
+						<Table name="ТЧ_ПереченьНоменклатура" id="23">
+							<Representation>List</Representation>
+							<Footer>true</Footer>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ТЧ_ПереченьНоменклатура</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТЧ_ПереченьНоменклатураКонтекстноеМеню" id="24"/>
+							<AutoCommandBar name="ТЧ_ПереченьНоменклатураКоманднаяПанель" id="25"/>
+							<ExtendedTooltip name="ТЧ_ПереченьНоменклатураРасширеннаяПодсказка" id="26"/>
+							<SearchStringAddition name="ТЧ_ПереченьНоменклатураСтрокаПоиска" id="27">
+								<AdditionSource>
+									<Item>ТЧ_ПереченьНоменклатура</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТЧ_ПереченьНоменклатураСтрокаПоискаКонтекстноеМеню" id="28"/>
+								<ExtendedTooltip name="ТЧ_ПереченьНоменклатураСтрокаПоискаРасширеннаяПодсказка" id="29"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТЧ_ПереченьНоменклатураСостояниеПросмотра" id="30">
+								<AdditionSource>
+									<Item>ТЧ_ПереченьНоменклатура</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТЧ_ПереченьНоменклатураСостояниеПросмотраКонтекстноеМеню" id="31"/>
+								<ExtendedTooltip name="ТЧ_ПереченьНоменклатураСостояниеПросмотраРасширеннаяПодсказка" id="32"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТЧ_ПереченьНоменклатураУправлениеПоиском" id="33">
+								<AdditionSource>
+									<Item>ТЧ_ПереченьНоменклатура</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТЧ_ПереченьНоменклатураУправлениеПоискомКонтекстноеМеню" id="34"/>
+								<ExtendedTooltip name="ТЧ_ПереченьНоменклатураУправлениеПоискомРасширеннаяПодсказка" id="35"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ТЧ_ПереченьНоменклатураНомерСтроки" id="36">
+									<DataPath>Объект.ТЧ_ПереченьНоменклатура.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЧ_ПереченьНоменклатураНомерСтрокиКонтекстноеМеню" id="37"/>
+									<ExtendedTooltip name="ТЧ_ПереченьНоменклатураНомерСтрокиРасширеннаяПодсказка" id="38"/>
+								</LabelField>
+								<InputField name="ТЧ_ПереченьНоменклатураМатериал" id="39">
+									<DataPath>Объект.ТЧ_ПереченьНоменклатура.Материал</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЧ_ПереченьНоменклатураМатериалКонтекстноеМеню" id="40"/>
+									<ExtendedTooltip name="ТЧ_ПереченьНоменклатураМатериалРасширеннаяПодсказка" id="41"/>
+								</InputField>
+								<InputField name="ТЧ_ПереченьНоменклатураЦена" id="42">
+									<DataPath>1/0:4a10b596-1beb-451e-96b7-9f4b5dfe81f0/0:de542c40-816e-4020-bb57-5d915fd15e08</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЧ_ПереченьНоменклатураЦенаКонтекстноеМеню" id="43"/>
+									<ExtendedTooltip name="ТЧ_ПереченьНоменклатураЦенаРасширеннаяПодсказка" id="44"/>
+								</InputField>
+								<InputField name="ТЧ_ПереченьНоменклатураНаборСвойств" id="75">
+									<DataPath>Объект.ТЧ_ПереченьНоменклатура.НаборСвойств</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ChoiceParameterLinks>
+										<xr:Link>
+											<xr:Name>Отбор.Владелец</xr:Name>
+											<xr:DataPath xsi:type="xs:string">Items.ТЧ_ПереченьНоменклатура.CurrentData.Материал</xr:DataPath>
+											<xr:ValueChange>Clear</xr:ValueChange>
+										</xr:Link>
+									</ChoiceParameterLinks>
+									<ContextMenu name="ТЧ_ПереченьНоменклатураНаборСвойствКонтекстноеМеню" id="76"/>
+									<ExtendedTooltip name="ТЧ_ПереченьНоменклатураНаборСвойствРасширеннаяПодсказка" id="77"/>
+								</InputField>
+								<InputField name="ТЧ_ПереченьНоменклатураКоличество" id="45">
+									<DataPath>Объект.ТЧ_ПереченьНоменклатура.Количество</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЧ_ПереченьНоменклатураКоличествоКонтекстноеМеню" id="46"/>
+									<ExtendedTooltip name="ТЧ_ПереченьНоменклатураКоличествоРасширеннаяПодсказка" id="47"/>
+								</InputField>
+								<InputField name="ТЧ_ПереченьНоменклатураСумма" id="48">
+									<DataPath>1/0:4a10b596-1beb-451e-96b7-9f4b5dfe81f0/0:2cc17d7d-b226-445f-b837-c25a1ec5882e</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterDataPath>1/0:4a10b596-1beb-451e-96b7-9f4b5dfe81f0/101000000:2cc17d7d-b226-445f-b837-c25a1ec5882e</FooterDataPath>
+									<ContextMenu name="ТЧ_ПереченьНоменклатураСуммаКонтекстноеМеню" id="49"/>
+									<ExtendedTooltip name="ТЧ_ПереченьНоменклатураСуммаРасширеннаяПодсказка" id="50"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаТЧ_Услуги" id="51">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Услуги</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаТЧ_УслугиРасширеннаяПодсказка" id="52"/>
+					<ChildItems>
+						<Table name="ТЧ_Услуги" id="53">
+							<Representation>List</Representation>
+							<Footer>true</Footer>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ТЧ_Услуги</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТЧ_УслугиКонтекстноеМеню" id="54"/>
+							<AutoCommandBar name="ТЧ_УслугиКоманднаяПанель" id="55"/>
+							<ExtendedTooltip name="ТЧ_УслугиРасширеннаяПодсказка" id="56"/>
+							<SearchStringAddition name="ТЧ_УслугиСтрокаПоиска" id="57">
+								<AdditionSource>
+									<Item>ТЧ_Услуги</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТЧ_УслугиСтрокаПоискаКонтекстноеМеню" id="58"/>
+								<ExtendedTooltip name="ТЧ_УслугиСтрокаПоискаРасширеннаяПодсказка" id="59"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТЧ_УслугиСостояниеПросмотра" id="60">
+								<AdditionSource>
+									<Item>ТЧ_Услуги</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТЧ_УслугиСостояниеПросмотраКонтекстноеМеню" id="61"/>
+								<ExtendedTooltip name="ТЧ_УслугиСостояниеПросмотраРасширеннаяПодсказка" id="62"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТЧ_УслугиУправлениеПоиском" id="63">
+								<AdditionSource>
+									<Item>ТЧ_Услуги</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТЧ_УслугиУправлениеПоискомКонтекстноеМеню" id="64"/>
+								<ExtendedTooltip name="ТЧ_УслугиУправлениеПоискомРасширеннаяПодсказка" id="65"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ТЧ_УслугиНомерСтроки" id="66">
+									<DataPath>Объект.ТЧ_Услуги.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЧ_УслугиНомерСтрокиКонтекстноеМеню" id="67"/>
+									<ExtendedTooltip name="ТЧ_УслугиНомерСтрокиРасширеннаяПодсказка" id="68"/>
+								</LabelField>
+								<InputField name="ТЧ_УслугиНоменклатура" id="69">
+									<DataPath>Объект.ТЧ_Услуги.Номенклатура</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Услуги</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЧ_УслугиНоменклатураКонтекстноеМеню" id="70"/>
+									<ExtendedTooltip name="ТЧ_УслугиНоменклатураРасширеннаяПодсказка" id="71"/>
+									<Events>
+										<Event name="OnChange">ТЧ_УслугиНоменклатураПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="ТЧ_УслугиСумма" id="72">
+									<DataPath>Объект.ТЧ_Услуги.Сумма</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<SkipOnInput>false</SkipOnInput>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterDataPath>Объект.ТЧ_Услуги.TotalСумма</FooterDataPath>
+									<ContextMenu name="ТЧ_УслугиСуммаКонтекстноеМеню" id="73"/>
+									<ExtendedTooltip name="ТЧ_УслугиСуммаРасширеннаяПодсказка" id="74"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ОказаниеУслуги</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

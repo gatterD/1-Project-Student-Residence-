@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ФИО</v8:content>
+				</v8:item>
+			</Title>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ДокументОснование" id="53">
+			<DataPath>Объект.ДокументОснование</DataPath>
+			<AutoMarkIncomplete>true</AutoMarkIncomplete>
+			<ContextMenu name="ДокументОснованиеКонтекстноеМеню" id="54"/>
+			<ExtendedTooltip name="ДокументОснованиеРасширеннаяПодсказка" id="55"/>
+		</InputField>
+		<InputField name="Пол" id="10">
+			<DataPath>Объект.Пол</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПолКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ПолРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="ДатаРождения" id="13">
+			<DataPath>Объект.ДатаРождения</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаРожденияКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ДатаРожденияРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="КурсОбучения" id="16">
+			<DataPath>Объект.КурсОбучения</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КурсОбученияКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="КурсОбученияРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="Общежитие" id="56">
+			<DataPath>Объект.Общежитие</DataPath>
+			<ContextMenu name="ОбщежитиеКонтекстноеМеню" id="57"/>
+			<ExtendedTooltip name="ОбщежитиеРасширеннаяПодсказка" id="58"/>
+		</InputField>
+		<InputField name="КоммерческийТипОбучения" id="47">
+			<DataPath>1/0:87800b7e-6904-48fa-bbd2-5401a094a491</DataPath>
+			<ContextMenu name="КоммерческийТипОбученияКонтекстноеМеню" id="48"/>
+			<ExtendedTooltip name="КоммерческийТипОбученияРасширеннаяПодсказка" id="49"/>
+		</InputField>
+		<Table name="ТЧ_Обучение" id="22">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ТЧ_Обучение</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТЧ_ОбучениеКонтекстноеМеню" id="23"/>
+			<AutoCommandBar name="ТЧ_ОбучениеКоманднаяПанель" id="24"/>
+			<ExtendedTooltip name="ТЧ_ОбучениеРасширеннаяПодсказка" id="25"/>
+			<SearchStringAddition name="ТЧ_ОбучениеСтрокаПоиска" id="26">
+				<AdditionSource>
+					<Item>ТЧ_Обучение</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТЧ_ОбучениеСтрокаПоискаКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="ТЧ_ОбучениеСтрокаПоискаРасширеннаяПодсказка" id="28"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТЧ_ОбучениеСостояниеПросмотра" id="29">
+				<AdditionSource>
+					<Item>ТЧ_Обучение</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТЧ_ОбучениеСостояниеПросмотраКонтекстноеМеню" id="30"/>
+				<ExtendedTooltip name="ТЧ_ОбучениеСостояниеПросмотраРасширеннаяПодсказка" id="31"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТЧ_ОбучениеУправлениеПоиском" id="32">
+				<AdditionSource>
+					<Item>ТЧ_Обучение</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТЧ_ОбучениеУправлениеПоискомКонтекстноеМеню" id="33"/>
+				<ExtendedTooltip name="ТЧ_ОбучениеУправлениеПоискомРасширеннаяПодсказка" id="34"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ТЧ_ОбучениеНомерСтроки" id="35">
+					<DataPath>Объект.ТЧ_Обучение.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЧ_ОбучениеНомерСтрокиКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ТЧ_ОбучениеНомерСтрокиРасширеннаяПодсказка" id="37"/>
+				</LabelField>
+				<InputField name="ТЧ_ОбучениеОбразовательнаяОрганизация" id="38">
+					<DataPath>Объект.ТЧ_Обучение.ОбразовательнаяОрганизация</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЧ_ОбучениеОбразовательнаяОрганизацияКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ТЧ_ОбучениеОбразовательнаяОрганизацияРасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<InputField name="ТЧ_ОбучениеКоммерческийТипОбучения" id="50">
+					<DataPath>Объект.ТЧ_Обучение.КоммерческийТипОбучения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЧ_ОбучениеКоммерческийТипОбученияКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ТЧ_ОбучениеКоммерческийТипОбученияРасширеннаяПодсказка" id="52"/>
+				</InputField>
+				<InputField name="ТЧ_ОбучениеДатаНачалаОбучения" id="41">
+					<DataPath>Объект.ТЧ_Обучение.ДатаНачалаОбучения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЧ_ОбучениеДатаНачалаОбученияКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ТЧ_ОбучениеДатаНачалаОбученияРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="ТЧ_ОбучениеДатаОкончанияОбучения" id="44">
+					<DataPath>Объект.ТЧ_Обучение.ДатаОкончанияОбучения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЧ_ОбучениеДатаОкончанияОбученияКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ТЧ_ОбучениеДатаОкончанияОбученияРасширеннаяПодсказка" id="46"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Студенты</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>FilterCriterion.Студенты.StandardCommand.OpenByValue</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

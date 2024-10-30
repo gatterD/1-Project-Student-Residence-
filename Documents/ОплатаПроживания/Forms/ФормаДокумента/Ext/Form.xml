@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="СотрудникЗаполняющийДокумент" id="7">
+			<DataPath>Объект.СотрудникЗаполняющийДокумент</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сотрудник Заполняющий Документ</v8:content>
+				</v8:item>
+			</Title>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СотрудникЗаполняющийДокументКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="СотрудникЗаполняющийДокументРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="ФинансовыйТипОбучения" id="10">
+			<DataPath>Объект.ФинансовыйТипОбучения</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ФинансовыйТипОбученияКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ФинансовыйТипОбученияРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="ТипОплаты" id="13">
+			<DataPath>Объект.ТипОплаты</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ТипОплатыКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ТипОплатыРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="СуммаДокумента" id="16">
+			<DataPath>Объект.СуммаДокумента</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СуммаДокументаКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="СуммаДокументаРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<Table name="ТЧ_ОплатаОбучения" id="19">
+			<Representation>List</Representation>
+			<Footer>true</Footer>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ТЧ_ОплатаОбучения</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТЧ_ОплатаОбученияКонтекстноеМеню" id="20"/>
+			<AutoCommandBar name="ТЧ_ОплатаОбученияКоманднаяПанель" id="21"/>
+			<ExtendedTooltip name="ТЧ_ОплатаОбученияРасширеннаяПодсказка" id="22"/>
+			<SearchStringAddition name="ТЧ_ОплатаОбученияСтрокаПоиска" id="23">
+				<AdditionSource>
+					<Item>ТЧ_ОплатаОбучения</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТЧ_ОплатаОбученияСтрокаПоискаКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="ТЧ_ОплатаОбученияСтрокаПоискаРасширеннаяПодсказка" id="25"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТЧ_ОплатаОбученияСостояниеПросмотра" id="26">
+				<AdditionSource>
+					<Item>ТЧ_ОплатаОбучения</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТЧ_ОплатаОбученияСостояниеПросмотраКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="ТЧ_ОплатаОбученияСостояниеПросмотраРасширеннаяПодсказка" id="28"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТЧ_ОплатаОбученияУправлениеПоиском" id="29">
+				<AdditionSource>
+					<Item>ТЧ_ОплатаОбучения</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТЧ_ОплатаОбученияУправлениеПоискомКонтекстноеМеню" id="30"/>
+				<ExtendedTooltip name="ТЧ_ОплатаОбученияУправлениеПоискомРасширеннаяПодсказка" id="31"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ТЧ_ОплатаОбученияНомерСтроки" id="32">
+					<DataPath>Объект.ТЧ_ОплатаОбучения.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЧ_ОплатаОбученияНомерСтрокиКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ТЧ_ОплатаОбученияНомерСтрокиРасширеннаяПодсказка" id="34"/>
+				</LabelField>
+				<InputField name="ТЧ_ОплатаОбученияСтудент" id="35">
+					<DataPath>Объект.ТЧ_ОплатаОбучения.Студент</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЧ_ОплатаОбученияСтудентКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ТЧ_ОплатаОбученияСтудентРасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="ТЧ_ОплатаОбученияОбразовательнаяОрганизация" id="38">
+					<DataPath>Объект.ТЧ_ОплатаОбучения.ОбразовательнаяОрганизация</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЧ_ОплатаОбученияОбразовательнаяОрганизацияКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ТЧ_ОплатаОбученияОбразовательнаяОрганизацияРасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<InputField name="ТЧ_ОплатаОбученияОбщежитие" id="41">
+					<DataPath>Объект.ТЧ_ОплатаОбучения.Общежитие</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЧ_ОплатаОбученияОбщежитиеКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ТЧ_ОплатаОбученияОбщежитиеРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="ТЧ_ОплатаОбученияОплатаПроживания" id="44">
+					<DataPath>Объект.ТЧ_ОплатаОбучения.ОплатаПроживания</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<FooterDataPath>Объект.ТЧ_ОплатаОбучения.TotalОплатаПроживания</FooterDataPath>
+					<ContextMenu name="ТЧ_ОплатаОбученияОплатаПроживанияКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ТЧ_ОплатаОбученияОплатаПроживанияРасширеннаяПодсказка" id="46"/>
+				</InputField>
+				<InputField name="ТЧ_ОплатаОбученияНаборХарактеристик" id="47">
+					<DataPath>Объект.ТЧ_ОплатаОбучения.НаборХарактеристик</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ChoiceParameterLinks>
+						<xr:Link>
+							<xr:Name>Отбор.Владелец</xr:Name>
+							<xr:DataPath xsi:type="xs:string">Items.ТЧ_ОплатаОбучения.CurrentData.Студент</xr:DataPath>
+							<xr:ValueChange>Clear</xr:ValueChange>
+						</xr:Link>
+					</ChoiceParameterLinks>
+					<ContextMenu name="ТЧ_ОплатаОбученияНаборХарактеристикКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ТЧ_ОплатаОбученияНаборХарактеристикРасширеннаяПодсказка" id="49"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ОплатаПроживания</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>
